@@ -14,64 +14,28 @@ export default {
       jsonData: {
         list: [
           {
-            type: 'slider',
-            label: '滑动输入条',
+            type: 'input',
+            label: '输入框',
             options: {
-              width: '100%',
-              defaultValue: 0,
-              disabled: false,
-              hidden: false,
-              min: 0,
-              max: 100,
-              step: 1,
-              showInput: false
-            },
-            model: 'slider_1594353472178',
-            key: 'slider_1594353472178',
-            rules: [{ required: false, message: '必填项' }]
-          },
-          {
-            type: 'time',
-            label: '时间选择框',
-            options: {
+              type: 'text',
+              isLable: false,
               width: '100%',
               defaultValue: '',
-              disabled: false,
-              hidden: false,
+              placeholder: '请输入',
               clearable: false,
-              placeholder: '请选择',
-              format: 'HH:mm:ss'
-            },
-            model: 'time_1594353473162',
-            key: 'time_1594353473162',
-            rules: [{ required: false, message: '必填项' }]
-          },
-          {
-            type: 'select',
-            label: '下拉选择器',
-            options: {
-              width: '100%',
-              multiple: false,
-              disabled: false,
-              clearable: false,
+              maxLength: null,
               hidden: false,
-              placeholder: '请选择',
-              dynamicKey: '',
-              dynamic: false,
-              options: [
-                { value: '1', label: '下拉框1' },
-                { value: '2', label: '下拉框2' }
-              ],
-              showSearch: false
+              disabled: false
             },
-            model: 'select_1594353474512',
-            key: 'select_1594353474512',
+            model: 'input_1594690015929',
+            key: 'input_1594690015929',
             rules: [{ required: false, message: '必填项' }]
           },
           {
             type: 'radio',
             label: '单选框',
             options: {
+              isLable: false,
               disabled: false,
               hidden: false,
               defaultValue: '',
@@ -83,15 +47,84 @@ export default {
                 { value: '3', label: '选项3' }
               ]
             },
-            model: 'radio_1594353473812',
-            key: 'radio_1594353473812',
+            model: 'radio_1594690016996',
+            key: 'radio_1594690016996',
             rules: [{ required: false, message: '必填项' }]
+          },
+          {
+            type: 'editor',
+            label: '富文本',
+            list: [],
+            options: {
+              isLable: false,
+              height: 300,
+              placeholder: '请输入',
+              defaultValue: '',
+              chinesization: true,
+              hidden: false,
+              disabled: false,
+              showLabel: false,
+              width: '100%'
+            },
+            model: 'editor_1594690026913',
+            key: 'editor_1594690026913',
+            rules: [{ required: false, message: '必填项' }]
+          },
+          {
+            type: 'radio',
+            label: '单选框',
+            options: {
+              isLable: false,
+              disabled: false,
+              hidden: false,
+              defaultValue: '',
+              dynamicKey: '',
+              dynamic: false,
+              options: [
+                { value: '1', label: '选项1' },
+                { value: '2', label: '选项2' },
+                { value: '3', label: '选项3' }
+              ]
+            },
+            model: 'radio_1594690022412',
+            key: 'radio_1594690022412',
+            rules: [{ required: false, message: '必填项' }]
+          },
+          {
+            type: 'slider',
+            label: '滑动输入条',
+            options: {
+              width: '100%',
+              isLable: false,
+              defaultValue: 0,
+              disabled: false,
+              hidden: false,
+              min: 0,
+              max: 100,
+              step: 1,
+              showInput: false
+            },
+            model: 'slider_1594690018197',
+            key: 'slider_1594690018197',
+            rules: [{ required: false, message: '必填项' }]
+          },
+          {
+            type: 'button',
+            label: '按钮',
+            options: {
+              type: 'primary',
+              handle: 'submit',
+              dynamicFun: '',
+              hidden: false,
+              disabled: false
+            },
+            key: 'button_1594690020512'
           }
         ],
         config: {
           layout: 'horizontal',
-          labelCol: { span: 4 },
-          wrapperCol: { span: 18 },
+          labelCol: { span: 0 },
+          wrapperCol: { span: 24 },
           hideRequiredMark: false,
           customStyle: ''
         }
