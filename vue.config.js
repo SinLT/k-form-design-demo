@@ -1,9 +1,9 @@
 const cdn = {
   css: [
-    `${process.env.VUE_APP_Path}/vendor/k-form-design/k-form-design-mini.css`
+    `${process.env.VUE_APP_Path}/vendor/k-form-design/kFormDesignMini.css`
   ],
   js: [
-    `${process.env.VUE_APP_Path}/vendor/k-form-design/k-form-design-mini.umd.min.js`
+    `${process.env.VUE_APP_Path}/vendor/k-form-design/kFormDesignMini.umd.min.js`
   ]
 }
 
@@ -13,8 +13,8 @@ module.exports = {
     loaderOptions: {
       less: {
         modifyVars: {
-          'primary-color': '#13c2c2',
-          'layout-color': '#9867f7'
+          'primary-color': '#9C76E4',
+          'layout-color': '#9C76E4'
         },
         javascriptEnabled: true
       }
